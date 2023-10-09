@@ -20,7 +20,7 @@
 /* اول-عمود-اصفار*/
 		if (R == 0 && m == 0)
 		{
-			putchar(R + '0');
+			_putchar(R + '0');
 		}
 /**
  * كل-الي-مكون-من
@@ -28,18 +28,18 @@
  */
 		else if (R < 10 && m != 9)
 			{
-				putchar(',');
-				putchar(' ');
-				putchar(' ');
-				putchar(R + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(R + '0');
 			}
 /*كل-الي-مكون-من-رقمين--معادا-العمود-الاخير*/
 			else if (R >= 10 && m != 9)
 			{
-				putchar(',');
-				putchar(' ');
-				putchar(R / 10 + '0');
-				putchar(R % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(R / 10 + '0');
+				_putchar(R % 10 + '0');
 			}
 			/*العمود-الاخير*/
 			else if (m == 9)
@@ -47,23 +47,23 @@
 			/*كل-العمود-عدا-اخر-2*/
 				if (R >= 10)
 				{
-				putchar(',');
-				putchar(' ');
-				putchar(R / 10 + '0');
-				putchar(R % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(R / 10 + '0');
+				_putchar(R % 10 + '0');
 				}
 				/*اول-2-في-العمود*/
 				else if (R < 10)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					putchar(R % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(R % 10 + '0');
 				}
 			}
 			m++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		n++;
 	}
 }
